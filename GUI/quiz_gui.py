@@ -73,10 +73,8 @@ radio_btns = {'a': r1, 'b': r2, 'c': r3, 'd': r4} # creating a dict to make chan
 
 label.pack() 
 question.pack()
-r1.pack()
-r2.pack()
-r3.pack()
-r4.pack()
+for btn in radio_btns.values():
+    btn.pack()
 button.pack()
 
 root.mainloop()
